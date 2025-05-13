@@ -183,23 +183,23 @@ class ResultChecker(Base):
         if self.config.glossary_enable == False or len(self.config.glossary_data) == 0:
             return None
 
-        # 如果启用了繁体输出，则先将数据转换为繁体
-        if self.config.traditional_chinese_enable == True:
-            self.config.glossary_data = [
-                {
-                    "src": v.get("src"),
-                    "dst": ResultChecker.OPENCCS2T.convert(v.get("dst")),
-                }
-                for v in self.config.glossary_data
-            ]
-        else:
-            self.config.glossary_data = [
-                {
-                    "src": v.get("src"),
-                    "dst": ResultChecker.OPENCCT2S.convert(v.get("dst")),
-                }
-                for v in self.config.glossary_data
-            ]
+        # # 如果启用了繁体输出，则先将数据转换为繁体
+        # if self.config.traditional_chinese_enable == True:
+        #     self.config.glossary_data = [
+        #         {
+        #             "src": v.get("src"),
+        #             "dst": ResultChecker.OPENCCS2T.convert(v.get("dst")),
+        #         }
+        #         for v in self.config.glossary_data
+        #     ]
+        # else:
+        #     self.config.glossary_data = [
+        #         {
+        #             "src": v.get("src"),
+        #             "dst": ResultChecker.OPENCCT2S.convert(v.get("dst")),
+        #         }
+        #         for v in self.config.glossary_data
+        #     ]
 
         count = 0
         result: dict[str, dict] = {}

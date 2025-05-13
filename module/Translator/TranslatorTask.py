@@ -169,7 +169,7 @@ class TranslatorTask(Base):
             dst_dict = self.replace_after_translation(dst_dict)
 
             # 繁体输出
-            dst_dict = self.convert_chinese_character_form(dst_dict)
+            # dst_dict = self.convert_chinese_character_form(dst_dict)
 
             # 更新术语表
             with TranslatorTask.LOCK:
