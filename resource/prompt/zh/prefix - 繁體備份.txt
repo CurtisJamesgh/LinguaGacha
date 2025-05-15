@@ -1,1 +1,0 @@
-任務目標就是把{source_language}翻譯成{target_language}：
