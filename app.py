@@ -112,6 +112,20 @@ if __name__ == "__main__":
         font.setHintingPreference(QFont.HintingPreference.PreferFullHinting)
     else:
         font.setHintingPreference(QFont.HintingPreference.PreferNoHinting)
+    
+    # 設定UI字型、大小、粗細
+    # 'Resource Han Rounded CN'
+    # 'Noto Sans Mono CJK TC'
+    # 'JetBrains Nerd Noto'
+    # 'HYWenHei-85W'
+    font = QFont('Resource Han Rounded CN', 13, QFont.Bold)
+    
+    # .venv/Lib/site-packages/qfluentwidgets/common/font.py 中的第 20 行程式碼
+    # 
+    # widget.setFont(getFont(fontSize, weight))
+    # 
+    # 記得註解掉，上面的UI字型設定才會生效。
+    
     app.setFont(font)
 
     # 启动任务引擎
