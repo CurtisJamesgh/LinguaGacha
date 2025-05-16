@@ -1,106 +1,106 @@
 <div align=center><img src="https://github.com/user-attachments/assets/cdf990fb-cf03-4370-a402-844f87b2fab8" width="256px;"></div>
 <div align=center><img src="https://img.shields.io/github/v/release/neavo/LinguaGacha"/>   <img src="https://img.shields.io/github/license/neavo/LinguaGacha"/>   <img src="https://img.shields.io/github/stars/neavo/LinguaGacha"/></div>
-<p align='center'>使用 AI 能力一键翻译 小说、游戏、字幕 等文本内容的次世代文本翻译器</p>
+<p align='center'>使用 AI 能力一鍵翻譯小說、遊戲、字幕等文本內容的新世代文本翻譯器</p>
 
 ## README 🌍
 - [ [中文](./README.md) ] | [ [English](./README_EN.md) ] | [ [日本語](./README_JA.md) ]
 
 ## 概述 📢
-- [LinguaGacha](https://github.com/neavo/LinguaGacha) (/ˈlɪŋɡwə ˈɡɑːtʃə/)，使用 AI 技术次世代文本翻译器
-- 开箱即用，（几乎）无需设置，功能的强大，不需要通过繁琐的设置来体现
-- 支持 `中` `英` `日` `韩` `俄` `德` `法` `意` 等 16 种语言的一键互译
-- 支持 `字幕`、`电子书`、`游戏文本` 等多种文本类型与文本格式
-- 支持 `Claude`、`ChatGPT`、`DeepSeek`、`SakuraLLM` 等各种本地或在线接口
+- [LinguaGacha](https://github.com/neavo/LinguaGacha) (/ˈlɪŋɡwə ˈɡɑːtʃə/)，使用 AI 技術的新世代文本翻譯器
+- 開箱即用，（幾乎）不用設定，強大的功能，不需要透過繁瑣的設定來體現
+- 支援 `中` `英` `日` `韓` `俄` `德` `法` `義` 等 16 種語言的一鍵互譯
+- 支援 `字幕`、`電子書`、`遊戲文本` 等多種文本類型與文本格式
+- 支援 `Claude`、`ChatGPT`、`DeepSeek`、`SakuraLLM` 等各種本機或線上 API
 
 > <img src="https://github.com/user-attachments/assets/99f7d74e-ab5b-4645-b736-6f665782b4af" style="width: 80%;">
 
 > <img src="https://github.com/user-attachments/assets/c0d7e898-f6fa-432f-a3cd-e231b657c4b5" style="width: 80%;">
 
-## 特别说明 ⚠️
-- 如您在翻译过程中使用了 [LinguaGacha](https://github.com/neavo/LinguaGacha) ，请在作品信息或发布页面的显要位置进行说明！
-- 如您的项目涉及任何商业行为或者商业收益，在使用 [LinguaGacha](https://github.com/neavo/LinguaGacha)  前，请先与作者联系以获得授权！
+## 特別聲明 ⚠️
+- 如果您在翻譯過程中使用了 [LinguaGacha](https://github.com/neavo/LinguaGacha)，請在作品資訊或發布頁面的顯眼位置進行說明！
+- 如果您的專案涉及任何商業行為或商業收益，在使用 [LinguaGacha](https://github.com/neavo/LinguaGacha) 前，請先與作者聯繫以取得授權！
 
-## 功能优势 📌
-- 极快的翻译速度，十秒钟一份字幕，一分钟一本小说，五分钟一部游戏
-- 自动生成术语表，保证角色姓名等专有名词在整部作品中的译名统一　`👈👈 独家绝技`
-- 最优的翻译质量，无论是 旗舰模型 `诸如 DeepSeek-R1` 还是 本地小模型　`诸如 Qwen2.5-7B`
-- 同类应用中最强的样式与代码保留能力，显著减少后期工作量，是制作内嵌汉化的最佳选择
-  - `.md` `.ass` `.epub` 格式几乎可以保留所有原有样式
-  - 大部分的 `WOLF`、`RenPy`、`RPGMaker`、`Kirikiri` 引擎游戏无需人工处理，即翻即玩　`👈👈 独家绝技`
+## 功能優勢 📌
+- 極快的翻譯速度，十秒鐘一份字幕，一分鐘一本小說，五分鐘一部遊戲
+- 自動產生詞彙表，確保角色姓名等專有名詞在整部作品中的譯名統一　`👈👈 獨家絕活`
+- 最優的翻譯品質，無論是旗艦模型 `例如 DeepSeek-R1` 還是本機小模型 `例如 Qwen2.5-7B`
+- 同類應用中最强的樣式與程式碼保留能力，顯著減少後期工作量，是製作内嵌中文化的最佳選擇
+  - `.md` `.ass` `.epub` 格式幾乎可以保留所有原有樣式
+  - 大部分的 `WOLF`、`RenPy`、`RPGMaker`、`Kirikiri` 引擎遊戲無需人工處理，即翻即玩　`👈👈 獨家絕活`
 
-## 配置要求 🖥️
-- 兼容 `OpenAI` `Google` `Anthropic` `SakuraLLM` 标准的 AI 大模型接口
-- 兼容 [KeywordGacha](https://github.com/neavo/KeywordGacha)　`👈👈 使用 AI 能力一键生成术语表的次世代工具`
+## 配置需求 💻
+- 相容 `OpenAI` `Google` `Anthropic` `SakuraLLM` 標準的 AI 大型語言模型 API
+- 相容 [KeywordGacha](https://github.com/neavo/KeywordGacha)　`👈👈 使用 AI 能力一鍵產生詞彙表的新世代工具`
 
-## 基本流程 🛸
-- 从 [发布页](https://github.com/neavo/LinguaGacha/releases) 下载应用
-- 获取一个可靠的 AI 大模型接口，建议选择其一：
-  - [ [本地接口](https://github.com/neavo/OneClickLLAMA) ]，免费，需至少 8G 显存的独立显卡，Nvidia 显卡为佳
-  - [ [火山引擎](https://github.com/neavo/LinguaGacha/wiki/VolcEngine) ]，需付费但便宜，速度快，质量高，无显卡要求　`👈👈 推荐`
-  - [ [DeepSeek](https://github.com/neavo/LinguaGacha/wiki/DeepSeek) ]，需付费但便宜，速度快，质量高，无显卡要求 `👈👈 白天不稳定，备选`
-- 准备要翻译的文本
-  - `字幕`、`电子书` 等一般不需要预处理
-  - `游戏文本` 需要根据游戏引擎选择合适的工具进行提取
-- 双击 `app.exe` 启动应用
-  - 在 `项目设置` 中设置原文语言、译文语言等必要信息
-  - 将要翻译的文本文件复制到输入文件夹（默认为 `input` 文件夹），在 `开始翻译` 中点击开始翻译
+## 基本流程 🚀
+- 從 [發布頁面](https://github.com/neavo/LinguaGacha/releases) 下載應用程式
+- 取得一個可靠的 AI 大型語言模型 API，建議選擇其一：
+  - [ [本機 API](https://github.com/neavo/OneClickLLAMA) ]，免費，需至少 8G 顯示記憶體的獨立顯示卡，Nvidia 顯示卡為佳
+  - [ [火山引擎](https://github.com/neavo/LinguaGacha/wiki/VolcEngine) ]，需付費但便宜，速度快，品質高，無顯示卡要求　`👈👈 推薦`
+  - [ [DeepSeek](https://github.com/neavo/LinguaGacha/wiki/DeepSeek) ]，需付費但便宜，速度快，品質高，無顯示卡要求 `👈👈 白天不穩定，備選`
+- 準備要翻譯的文本
+  - `字幕`、`電子書` 等一般不需要預先處理
+  - `遊戲文本` 需要根據遊戲引擎選擇合適的工具進行提取
+- 雙擊 `app.exe` 啟動應用程式
+  - 在 `專案設定` 中設定原文語言、譯文語言等必要資訊
+  - 將要翻譯的文本檔案複製到輸入資料夾（預設為 `input` 資料夾），在 `開始翻譯` 中點擊開始翻譯
 
-## 使用教程 📝
-- 综合
-  - [基础教程](https://github.com/neavo/LinguaGacha/wiki/BasicTutorial)　`👈👈 手把手教学，有手就行，新手必看`
-  - [Google Gemini 免费接口](https://github.com/neavo/LinguaGacha/wiki/GoogleGeminiFree)
-  - [高质量翻译 WOLF 引擎游戏的最佳实践](https://github.com/neavo/LinguaGacha/wiki/BestPracticeForWOLF)
-  - [高质量翻译 RenPy 引擎游戏的最佳实践](https://github.com/neavo/LinguaGacha/wiki/BestPracticeForRenPy)
-  - [高质量翻译 RPGMaker 系列引擎游戏的最佳实践](https://github.com/neavo/LinguaGacha/wiki/BestPracticeForRPGMaker)
-- 视频教程
+## 使用教學 📝
+- 綜合
+  - [基礎教學](https://github.com/neavo/LinguaGacha/wiki/BasicTutorial)　`👈👈 手把手教學，有手就行，新手必看`
+  - [Google Gemini 免費 API](https://github.com/neavo/LinguaGacha/wiki/GoogleGeminiFree)
+  - [高品質翻譯 WOLF 引擎遊戲的最佳實踐](https://github.com/neavo/LinguaGacha/wiki/BestPracticeForWOLF)
+  - [高品質翻譯 RenPy 引擎遊戲的最佳實踐](https://github.com/neavo/LinguaGacha/wiki/BestPracticeForRenPy)
+  - [高品質翻譯 RPGMaker 系列引擎遊戲的最佳實踐](https://github.com/neavo/LinguaGacha/wiki/BestPracticeForRPGMaker)
+- 影片教學
   - [How to Translate RPGMV with LinguaGacha and Translator++ (English)](https://www.youtube.com/watch?v=wtV_IODzi8I)
-- 功能说明
-  - [术语表](https://github.com/neavo/LinguaGacha/wiki/Glossary)　　[文本保护](https://github.com/neavo/LinguaGacha/wiki/TextPreserve)　　[文本替换](https://github.com/neavo/LinguaGacha/wiki/Replacement)　　
-  - [补充翻译](https://github.com/neavo/LinguaGacha/wiki/IncrementalTranslation)　　[MTool 优化器](https://github.com/neavo/LinguaGacha/wiki/MToolOptimizer)
-  - [百宝箱 - 批量修正](https://github.com/neavo/LinguaGacha/wiki/BatchCorrection)　　[百宝箱 - 部分重翻](https://github.com/neavo/LinguaGacha/wiki/ReTranslation)　　[百宝箱 - 姓名字段提取](https://github.com/neavo/LinguaGacha/wiki/NameFieldExtraction)
-- 你可以在 [Wiki](https://github.com/neavo/LinguaGacha/wiki) 找到各项功能的更详细介绍，也欢迎在 [讨论区](https://github.com/neavo/LinguaGacha/discussions) 投稿你的使用心得
+- 功能說明
+  - [詞彙表](https://github.com/neavo/LinguaGacha/wiki/Glossary)　　[文本保護](https://github.com/neavo/LinguaGacha/wiki/TextPreserve)　　[文本取代](https://github.com/neavo/LinguaGacha/wiki/Replacement)　　
+  - [補充翻譯](https://github.com/neavo/LinguaGacha/wiki/IncrementalTranslation)　　[MTool 優化器](https://github.com/neavo/LinguaGacha/wiki/MToolOptimizer)
+  - [百寶箱 - 批次修正](https://github.com/neavo/LinguaGacha/wiki/BatchCorrection)　　[百寶箱 - 部分重翻](https://github.com/neavo/LinguaGacha/wiki/ReTranslation)　　[百寶箱 - 姓名字段提取](https://github.com/neavo/LinguaGacha/wiki/NameFieldExtraction)
+- 您可以在 [Wiki](https://github.com/neavo/LinguaGacha/wiki) 找到各項功能的更詳細介紹，也歡迎在 [討論區](https://github.com/neavo/LinguaGacha/discussions) 分享您的使用心得
 
 ## 文本格式 🏷️
-- 在任务开始时，应用将读取输入文件夹（及其子目录）内所有支持的文件，包括但是不限于：
+- 在任務開始時，應用程式將讀取輸入資料夾（及其子目錄）內所有支援的檔案，包括但不限於：
   - 字幕（.srt .ass）
-  - 电子书（.txt .epub）
+  - 電子書（.txt .epub）
   - Markdown（.md）
-  - [RenPy](https://www.renpy.org) 导出游戏文本（.rpy）
-  - [MTool](https://mtool.app) 导出游戏文本（.json）
-  - [SExtractor](https://github.com/satan53x/SExtractor) 导出游戏文本（.txt .json .xlsx）
-  - [VNTextPatch](https://github.com/arcusmaximus/VNTranslationTools) 导出游戏文本（.json）
-  - [Translator++](https://dreamsavior.net/translator-plusplus) 项目文件（.trans）
-  - [Translator++](https://dreamsavior.net/translator-plusplus) 导出游戏文本（.xlsx）
-  - [WOLF 官方翻译工具](https://silversecond.booth.pm/items/5151747) 导出游戏文本（.xlsx）
-- 具体示例可见 [Wiki - 支持的文件格式](https://github.com/neavo/LinguaGacha/wiki/%E6%94%AF%E6%8C%81%E7%9A%84%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F)，更多格式将持续添加，你也可以在 [ISSUES](https://github.com/neavo/LinguaGacha/issues) 中提出你的需求
+  - [RenPy](https://www.renpy.org) 匯出遊戲文本（.rpy）
+  - [MTool](https://mtool.app) 匯出遊戲文本（.json）
+  - [SExtractor](https://github.com/satan53x/SExtractor) 匯出遊戲文本（.txt .json .xlsx）
+  - [VNTextPatch](https://github.com/arcusmaximus/VNTranslationTools) 匯出遊戲文本（.json）
+  - [Translator++](https://dreamsavior.net/translator-plusplus) 專案檔案（.trans）
+  - [Translator++](https://dreamsavior.net/translator-plusplus) 匯出遊戲文本（.xlsx）
+  - [WOLF 官方翻譯工具](https://silversecond.booth.pm/items/5151747) 匯出遊戲文本（.xlsx）
+- 具體範例可見 [Wiki - 支援的檔案格式](https://github.com/neavo/LinguaGacha/wiki/%E6%94%AF%E6%8C%81%E7%9A%84%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F)，更多格式將持續新增，您也可以在 [ISSUES](https://github.com/neavo/LinguaGacha/issues) 中提出您的需求
 
-## 近期更新 📅
+## 近期更新 🗓️
 - 20250515 v0.27.0
-  - 新增 - 任务完成时打开输出文件夹
-  - 调整 - 优化了一些交互细节
+  - 新增 - 任務完成時開啟輸出資料夾
+  - 調整 - 優化了一些互動細節
 
 - 20250506 v0.26.0
-  - 新增 - 专家模式，启用将开启一系列高级功能：
-    - 专家设置
-    - 高级日志信息
-    - [自定义文本保护规则](https://github.com/neavo/LinguaGacha/wiki/TextPreserve)
+  - 新增 - 專家模式，啟用將開啟一系列進階功能：
+    - 專家設定
+    - 進階日誌資訊
+    - [自訂文本保護規則](https://github.com/neavo/LinguaGacha/wiki/TextPreserve)
 
-## 常见问题 📥
-- [LinguaGacha](https://github.com/neavo/LinguaGacha) 与 [AiNiee](https://github.com/NEKOparapa/AiNiee) 的关系
-  - `LinguaGacha` 的作者是 `AiNiee v5` 的主要开发与维护者之一
-  - `AiNiee v5` 及延用至 `AiNiee v6` 的 UI 框架也是由作者主要负责设计和开发的
-  - 这也是两者 UI 相似的原因，因为作者已经没有灵感再重新设计一套了，求放过 🤣
-  - 不过 `LinguaGacha` 并不是 `AiNiee` 的分支版本，而是在其经验上开发的全新翻译器应用
-  - 相对作者主力开发的 `AiNiee v5`，`LinguaGacha` 有一些独有的优势，包括但是不限于：
-    - 零设置，全默认设置下即可实现最佳的翻译质量与翻译速度
-    - 更好的性能优化，即使 512+ 并发任务时电脑也不会卡顿，实际翻译速度也更快
-    - 原生支持 `.rpy` `.trans`，大部分 `WOLF`、`RenPy`、`RPGMaker`、`Kirikiri` 游戏即翻即玩
-    - 对文件格式的支持更好，例如 `.md` `.ass` `.epub` 格式几乎可以保留所有原有样式
-    - 更完善的预处理、后处理和结果检查功能，让制作高品质翻译的校对工作量显著减少
+## 常見問題 📮
+- [LinguaGacha](https://github.com/neavo/LinguaGacha) 與 [AiNiee](https://github.com/NEKOparapa/AiNiee) 的關係
+  - `LinguaGacha` 的作者是 `AiNiee v5` 的主要開發與維護者之一
+  - `AiNiee v5` 及沿用至 `AiNiee v6` 的 UI 框架也是由作者主要負責設計和開發的
+  - 這也是兩者 UI 相似的原因，因為作者已經沒有靈感再重新設計一套了，求放過 🤣
+  - 不過 `LinguaGacha` 並不是 `AiNiee` 的分支版本，而是在其經驗上開發的全新翻譯器應用
+  - 相對作者主力開發的 `AiNiee v5`，`LinguaGacha` 有一些獨有的優勢，包括但不限於：
+    - 零設定，全預設設定下即可實現最佳的翻譯品質與翻譯速度
+    - 更好的效能優化，即使 512+ 並行任務時電腦也不會卡頓，實際翻譯速度也更快
+    - 原生支援 `.rpy` `.trans`，大部分 `WOLF`、`RenPy`、`RPGMaker`、`Kirikiri` 遊戲即翻即玩
+    - 對檔案格式的支援更好，例如 `.md` `.ass` `.epub` 格式幾乎可以保留所有原有樣式
+    - 更完善的預處理、後處理和結果檢查功能，讓製作高品質翻譯的校對工作量顯著減少
 
-## 问题反馈 😥
-- 运行时的日志保存在应用根目录下的 `log` 等文件夹
-- 反馈问题的时候请附上这些日志文件
-- 你也可以来群组讨论与反馈
+## 問題回報 😥
+- 執行時的日誌保存在應用程式根目錄下的 `log` 等資料夾
+- 回報問題的時候請附上這些日誌檔案
+- 您也可以來群組討論與回報
   - QQ - 41763231⑥
   - Discord - https://discord.gg/pyMRBGse75
