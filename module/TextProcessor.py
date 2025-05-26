@@ -321,7 +321,7 @@ class TextProcessor(Base):
                 dst = dsts.pop(0).strip()
 
                 # 繁体输出
-                dst = self.convert_chinese_character_form(dst)
+                # dst = self.convert_chinese_character_form(dst)
 
                 # 自动修复
                 dst = self.auto_fix(src, dst)
