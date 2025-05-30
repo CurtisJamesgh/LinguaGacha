@@ -80,7 +80,7 @@ class LocalizerZH():
     path_result_check_similarity: str = "結果檢查_相似度較高.json"
     path_result_check_glossary: str = "結果檢查_詞彙表未生效.json"
     path_result_check_untranslated: str = "結果檢查_未翻譯的項目.json"
-    path_result_check_retry_count_threshold: str = "結果檢查_重試次數達到門檻值.json"
+    path_result_check_retry_count_threshold: str = "結果檢查_重試次數達到上限.json"
     path_result_batch_correction: str = "批次修正.xlsx"
     path_result_name_field_extraction: str = "姓名字段擷取.xlsx"
 
@@ -173,7 +173,7 @@ class LocalizerZH():
     platform_page_api_test: str = "測試介面"
     platform_page_api_delete: str = "刪除介面"
     platform_page_widget_add_title: str = "介面清單"
-    platform_page_widget_add_content: str = "在此新增和管理任何相容 OpenAI、Anthropic 格式的 LLM 模型介面"
+    platform_page_widget_add_content: str = "在此新增和管理任何相容 Google、OpenAI、Anthropic 格式的 LLM 模型介面"
 
     # 介面編輯
     platform_edit_page_name: str = "請輸入介面名稱 …"
@@ -243,7 +243,7 @@ class LocalizerZH():
     translation_page_timer: str = "請設定延遲啟動前要等待的時間"
 
     # 基礎設定
-    basic_settings_page_max_workers_title: str = "並行任務門檻值"
+    basic_settings_page_max_workers_title: str = "並行任務上限"
     basic_settings_page_max_workers_content: str = (
         "同時執行的任務數量的最大值"
         "<br>"
@@ -251,51 +251,67 @@ class LocalizerZH():
         ""
         ""
     )
-    basic_settings_page_rpm_threshold_title: str = "每分鐘任務數量門檻值"
+    basic_settings_page_rpm_threshold_title: str = "每分鐘任務數量上限"
     basic_settings_page_rpm_threshold_content: str = (
-        "每分鐘執行的任務總數量的最大值，即 <font color='darkgoldenrod'><b>RPM</b></font> 門檻值"
+        "每分鐘執行的任務總數量的最大值，即 <font color='darkgoldenrod'><b>RPM</b></font> 上限"
         "<br>"
         "合理設定可以顯著加快任務的完成速度，請參考 API 平台的說明文件進行設定，0 = 自動"
         ""
         ""
     )
-    basic_settings_page_token_threshold_title: str = "任務長度門檻值"
+    basic_settings_page_token_threshold_title: str = "任務長度上限"
     basic_settings_page_token_threshold_content: str = "每個任務所包含的文字的最大 Token 數量"
-    basic_settings_page_request_timeout_title: str = "逾時時間門檻值"
+    basic_settings_page_request_timeout_title: str = "逾時時間上限"
     basic_settings_page_request_timeout_content: str = (
         "發起請求時等待模型回覆的最長時間（秒），逾時仍未收到回覆，則會判斷為任務失敗"
         ""
         ""
     )
-    basic_settings_page_max_round_title: str = "任務回合門檻值"
-    basic_settings_page_max_round_content: str = "當完成一輪任務後，將在新的回合中對失敗的任務進行重試，直到全部完成或達到回合門檻值"
+    basic_settings_page_max_round_title: str = "任務回合上限"
+    basic_settings_page_max_round_content: str = "當完成一輪任務後，將在新的回合中對失敗的任務進行重試，直到全部完成或達到回合上限"
 
     # 專家設定
-    expert_settings_page_preceding_lines_threshold: str = "參考上文行數門檻值"
-    expert_settings_page_preceding_lines_threshold_desc: str = "每個翻譯任務最多可攜帶的參考上文的行數，預設 3 行"
-    expert_settings_page_preceding_disable_on_local: str = "本地介面啟用參考上文"
-    expert_settings_page_preceding_disable_on_local_desc: str = "本地模型效能較差，參考上文功能大部分時候是負面效果，預設停用"
-    expert_settings_page_deduplication_in_bilingual: str = "雙語輸出檔案中對重複行去重複"
-    expert_settings_page_deduplication_in_bilingual_desc: str = "在雙語輸出檔案中，原文與譯文一致時是否去重複，預設啟用"
-    expert_settings_page_write_translated_name_fields_to_file: str = "將姓名字段譯文寫入輸出檔案"
-    expert_settings_page_write_translated_name_fields_to_file_desc: str = (
-        "部分 <font color='darkgoldenrod'><b>GalGame</b></font> 中，姓名字段資料與立繪、配音等資源檔案綁定，翻譯後會報錯，此時可以關閉該功能，預設啟用"
+    expert_settings_page_preceding_lines_threshold: str = "參考上文行數上限"
+    expert_settings_page_preceding_lines_threshold_desc: str = "每個翻譯任務最多可參考的上文行數，預設 3 行"
+    expert_settings_page_preceding_disable_on_local: str = "本機介面啟用參考上文"
+    expert_settings_page_preceding_disable_on_local_desc: str = "本機模型效能較差，參考上文功能多數時候會有負面影響，預設停用"
+    expert_settings_page_clean_ruby: str = "清理原文中的注音標示"
+    expert_settings_page_clean_ruby_desc: str = (
+        "移除注音標示中的讀音部分，僅保留正文，預設啟用"
         "<br>"
-        "支援格式："
+        "文字中的注音標示通常模型無法正確理解，清理後可提升翻譯品質，支援的注音格式包含但不限於："
         "<br>"
-        "• RenPy 匯出遊戲文字（.rpy）"
+        "• (漢字/かんじ) [漢字/かんじ] |漢字[かんじ]"
         "<br>"
-        "• VNTextPatch 或 SExtractor 匯出帶 name 欄位的遊戲文字（.json）"
+        "• \\r[漢字,かんじ] [r_かんじ][ch_漢字] [ch_漢字]"
+        "<br>"
+        "• [ruby text=かんじ] [ruby text = かんじ] [ruby text=\"かんじ\"] [ruby text = \"かんじ\"]"
         ""
         ""
     )
-    expert_settings_page_result_checker_retry_count_threshold: str = "結果檢查 - 重試次數達到門檻值"
+    expert_settings_page_deduplication_in_trans: str = "T++ 專案檔中移除重複文字"
+    expert_settings_page_deduplication_in_trans_desc: str = "在 T++ 專案檔 (即 <font color='darkgoldenrod'><b>.trans</b></font> 檔案) 中，如有重複文字是否移除，預設啟用"
+    expert_settings_page_deduplication_in_bilingual: str = "雙語輸出檔中原文與譯文一致的文字僅輸出一次"
+    expert_settings_page_deduplication_in_bilingual_desc: str = "在字幕與電子書中，如目標文字的原文與譯文一致時是否僅輸出一次，預設啟用"
+    expert_settings_page_write_translated_name_fields_to_file: str = "將姓名字段譯文寫入輸出檔案"
+    expert_settings_page_write_translated_name_fields_to_file_desc: str = (
+        "部分 <font color='darkgoldenrod'><b>GalGame</b></font> 中，姓名字段資料與立繪、配音等資源檔案綁定，翻譯後會出錯，此時可關閉此功能，預設啟用"
+        "<br>"
+        "支援格式："
+        "<br>"
+        "• RenPy 匯出遊戲文字 (.rpy)"
+        "<br>"
+        "• VNTextPatch 或 SExtractor 匯出帶 name 欄位的遊戲文字 (.json)"
+        ""
+        ""
+    )
+    expert_settings_page_result_checker_retry_count_threshold: str = "結果檢查 - 重試次數達到上限"
     expert_settings_page_result_checker_retry_count_threshold_desc: str = (
-        "是否在結果檢查報告裡面輸出 <font color='darkgoldenrod'><b>重試次數達到門檻值</b></font> 的項目列表"
+        "是否在結果檢查報告中輸出 <font color='darkgoldenrod'><b>重試次數達到上限</b></font> 的項目清單"
         "<br>"
-        "• 在進行翻譯結果檢查時，如果重試達門檻值依然未通過檢查，就會取最後一次的結果"
+        "• 進行翻譯結果檢查時，若重試達到上限仍未通過檢查，則會採用最後一次的結果"
         "<br>"
-        "• 透過此功能，就可以逐一確認最後的取值實際上是否正確的"
+        "• 透過此功能，即可逐一確認最後採用的值是否正確"
     )
 
     # 品質類通用
