@@ -274,7 +274,7 @@ class LocalizerZH():
 
     # 專家設定
     expert_settings_page_preceding_lines_threshold: str = "參考上文行數上限"
-    expert_settings_page_preceding_lines_threshold_desc: str = "每個翻譯任務最多可參考的上文行數，預設 3 行"
+    expert_settings_page_preceding_lines_threshold_desc: str = "每個翻譯任務最多可參考的上文行數，預設停用"
     expert_settings_page_preceding_disable_on_local: str = "本機介面啟用參考上文"
     expert_settings_page_preceding_disable_on_local_desc: str = "本機模型效能較差，參考上文功能多數時候會有負面影響，預設停用"
     expert_settings_page_clean_ruby: str = "清理原文中的注音標示"
@@ -285,7 +285,7 @@ class LocalizerZH():
         "<br>"
         "• (漢字/かんじ) [漢字/かんじ] |漢字[かんじ]"
         "<br>"
-        "• \\r[漢字,かんじ] [r_かんじ][ch_漢字] [ch_漢字]"
+        "• \\r[漢字,かんじ] \\rb[漢字,かんじ] [r_かんじ][ch_漢字] [ch_漢字]"
         "<br>"
         "• [ruby text=かんじ] [ruby text = かんじ] [ruby text=\"かんじ\"] [ruby text = \"かんじ\"]"
         ""
